@@ -20,7 +20,7 @@
   \providecommand\rotatebox[2]{#2}%
   \@ifundefined{ifGPcolor}{%
     \newif\ifGPcolor
-    \GPcolorfalse
+    \GPcolortrue
   }{}%
   \@ifundefined{ifGPblacktext}{%
     \newif\ifGPblacktext
@@ -82,34 +82,39 @@
 \begin{picture}(7200.00,5040.00)%
     \gplgaddtomacro\gplbacktext{%
       \csname LTb\endcsname%
-      \put(946,704){\makebox(0,0)[r]{\strut{}$-2$}}%
-      \put(946,1518){\makebox(0,0)[r]{\strut{}$-1.5$}}%
-      \put(946,2332){\makebox(0,0)[r]{\strut{}$-1$}}%
-      \put(946,3147){\makebox(0,0)[r]{\strut{}$-0.5$}}%
-      \put(946,3961){\makebox(0,0)[r]{\strut{}$0$}}%
-      \put(946,4775){\makebox(0,0)[r]{\strut{}$0.5$}}%
-      \put(1078,484){\makebox(0,0){\strut{}$-2$}}%
-      \put(1714,484){\makebox(0,0){\strut{}$0$}}%
-      \put(2350,484){\makebox(0,0){\strut{}$2$}}%
-      \put(2986,484){\makebox(0,0){\strut{}$4$}}%
-      \put(3622,484){\makebox(0,0){\strut{}$6$}}%
-      \put(4259,484){\makebox(0,0){\strut{}$8$}}%
-      \put(4895,484){\makebox(0,0){\strut{}$10$}}%
-      \put(5531,484){\makebox(0,0){\strut{}$12$}}%
-      \put(6167,484){\makebox(0,0){\strut{}$14$}}%
-      \put(6803,484){\makebox(0,0){\strut{}$16$}}%
+      \put(682,704){\makebox(0,0)[r]{\strut{}$2$}}%
+      \put(682,1213){\makebox(0,0)[r]{\strut{}$3$}}%
+      \put(682,1722){\makebox(0,0)[r]{\strut{}$4$}}%
+      \put(682,2231){\makebox(0,0)[r]{\strut{}$5$}}%
+      \put(682,2740){\makebox(0,0)[r]{\strut{}$6$}}%
+      \put(682,3248){\makebox(0,0)[r]{\strut{}$7$}}%
+      \put(682,3757){\makebox(0,0)[r]{\strut{}$8$}}%
+      \put(682,4266){\makebox(0,0)[r]{\strut{}$9$}}%
+      \put(682,4775){\makebox(0,0)[r]{\strut{}$10$}}%
+      \put(814,484){\makebox(0,0){\strut{}$0$}}%
+      \put(1479,484){\makebox(0,0){\strut{}$2$}}%
+      \put(2145,484){\makebox(0,0){\strut{}$4$}}%
+      \put(2810,484){\makebox(0,0){\strut{}$6$}}%
+      \put(3476,484){\makebox(0,0){\strut{}$8$}}%
+      \put(4141,484){\makebox(0,0){\strut{}$10$}}%
+      \put(4807,484){\makebox(0,0){\strut{}$12$}}%
+      \put(5472,484){\makebox(0,0){\strut{}$14$}}%
+      \put(6138,484){\makebox(0,0){\strut{}$16$}}%
+      \put(6803,484){\makebox(0,0){\strut{}$18$}}%
     }%
     \gplgaddtomacro\gplfronttext{%
       \csname LTb\endcsname%
-      \put(176,2739){\rotatebox{-270}{\makebox(0,0){\strut{}Relativdruck $\Delta p$ [hPa]}}}%
-      \put(3940,154){\makebox(0,0){\strut{}Höhe $h$ [m]}}%
+      \put(176,2739){\rotatebox{-270}{\makebox(0,0){\strut{}$v$ [$\frac{\text{m}}{\text{s}}$]}}}%
+      \put(3808,154){\makebox(0,0){\strut{}$r$ [cm]}}%
       \csname LTb\endcsname%
       \put(5816,4602){\makebox(0,0)[r]{\strut{}Messwerte}}%
       \csname LTb\endcsname%
-      \put(5816,4382){\makebox(0,0)[r]{\strut{}Lin. Reg.}}%
+      \put(5816,4382){\makebox(0,0)[r]{\strut{}Rankine-Modell}}%
+      \csname LTb\endcsname%
+      \put(5816,4162){\makebox(0,0)[r]{\strut{}Burgers-Rott-Modell}}%
     }%
     \gplbacktext
-    \put(0,0){\includegraphics{hoehe}}%
+    \put(0,0){\includegraphics{tornado1}}%
     \gplfronttext
   \end{picture}%
 \endgroup
