@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.20)  27 DEC 2015 20:54
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.12.20)  28 DEC 2015 11:15
 entering extended mode
 **Navigation.tex
 
@@ -1218,7 +1218,7 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 <GPS.jpg, id=1, 770.88pt x 578.16pt>
 File: GPS.jpg Graphic file (type jpg)
  <use GPS.jpg>
-Package pdftex.def Info: GPS.jpg used on input line 139.
+Package pdftex.def Info: GPS.jpg used on input line 152.
 (pdftex.def)             Requested size: 358.50612pt x 268.8769pt.
  [1
 
@@ -1228,7 +1228,7 @@ rs/Felix Home/Documents/Uni/5.Semester/Strömungsphysikalische Vorgänge im Exp
 eriment/DLR/Navigation/GPS.jpg>]
 ("C:\Users\Felix Home\Documents\Uni\5.Semester\Strömungsphysikalische Vorgäng
 e im Experiment\DLR\Navigation\gbesch.tex"
-<gbesch.pdf, id=9, 361.35pt x 252.945pt>
+<gbesch.pdf, id=12, 361.35pt x 252.945pt>
 File: gbesch.pdf Graphic file (type pdf)
  <use gbesch.pdf>
 Package pdftex.def Info: gbesch.pdf used on input line 105.
@@ -1238,13 +1238,13 @@ Package pdftex.def Info: gbesch.pdf used on input line 105.
 ("C:\Users\Felix Home\Documents\Uni\5.Semester\Strömungsphysikalische Vorgäng
 e im Experiment\DLR\Navigation\Navigation.aux") ) 
 Here is how much of TeX's memory you used:
- 17145 strings out of 494045
- 327919 string characters out of 3148371
- 373554 words of memory out of 3000000
- 20203 multiletter control sequences out of 15000+200000
+ 17146 strings out of 494045
+ 327943 string characters out of 3148371
+ 374554 words of memory out of 3000000
+ 20204 multiletter control sequences out of 15000+200000
  15430 words of font info for 64 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 40i,11n,75p,10377b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 40i,16n,75p,10377b,1010s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
@@ -1255,7 +1255,7 @@ Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Navigation.pdf (2 pages, 673002 bytes).
+Output written on Navigation.pdf (2 pages, 678485 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

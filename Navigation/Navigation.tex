@@ -134,6 +134,19 @@
 
 \section{GPS Versuch}
 
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline		
+		Position & Startzeit & Zielzeit & Dauer $\Delta t$ & $v^{-1}$ & Strecke $\Delta s$\\
+		\hline
+		Schranke & 15:26:00 Uhr & 15:26:39 Uhr & $39\,$s & $8.86 \frac{\si{\second}}{10\si{\meter}}$ & $44\,$m\\
+		Brücke & 15:25:57 Uhr & 15:26:52 Uhr & $55\,$s & $9.78 \frac{\si{\second}}{15\si{\meter}}$ & $84\,$m\\
+		Haus 21 & 15:27:20 Uhr & 15:28:15 Uhr & $55\,$s & $10.5 \frac{\si{\second}}{15\si{\meter}}$ & $79\,$m\\
+		\hline
+	\end{tabular}
+\end{table}
+
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.8\textwidth]{GPS.jpg}
@@ -155,7 +168,22 @@
 	\sigma_g = \frac{4\pi^2}{T^2} \sqrt{\sigma_l^2+\left(\frac{2l}{T}\right)^2 \cdot\sigma_T^2}
 \end{align}
 
-\begin{figure}
+\begin{table}[!htb]
+	\centering
+	\begin{tabular}{|c|c|}
+		\hline
+		Seil- & Perioden- \\
+		länge [m] & dauer [s] \\
+		\hline
+		$0.6$ & $1.55$\\
+		$0.8$ & $1.79$\\
+		$1.0$ & $2.025$\\
+		$1.2$ & $2.165$\\
+		\hline
+	\end{tabular}
+\end{table}
+
+\begin{figure}[!htb]
 	\centering
 	\input{gbesch.tex}
 \end{figure}

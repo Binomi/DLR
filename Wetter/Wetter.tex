@@ -137,13 +137,29 @@
 \section{Lokales Wetter}
 
 \section{Relation Druck und Höhe}
-\begin{figure}
+\begin{figure}[!htb]
 	\centering
 	\input{hoehe.tex}
 	\caption{Steigung $m=(-0.123 \pm 0.013)\,\si{\hecto\pascal\per\meter}$}
 \end{figure}
 
+Dies bedeutet,dass der Druck etwa um $10\,$hPa auf $8\,$Metern abnimmt.
+Das ist der in der Vorlesung angegebene Wert.
+
 \section{Tornadoexperiment}
+Rankine-Wirbel:
+\begin{align}
+	v(r) = 
+	\begin{cases}
+		\omega r & \text{falls } r \leq R\\
+		\omega \frac{R^2}{r} & \text{falls } r > R\\
+	\end{cases}
+\end{align}
+
+Burgers-Rott-Modell
+\begin{align}
+	v(r) = \frac{\Gamma}{2\pi r}\left[1-\exp\left(a r^2\right)\right]
+\end{align}
 
  \begin{figure}[!htb]
 	\begin{minipage}{0.5\textwidth}	
