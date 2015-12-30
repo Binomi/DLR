@@ -133,7 +133,7 @@
 \maketitle
 
 \section{GPS Versuch}
-
+Aus der Differenz von Start- und Zielzeit wird die Wegstrecke der menschlichen Photonen bestimmt.
 \begin{table}[!htb]
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|}
@@ -145,29 +145,36 @@
 		Haus 21 & 15:27:20 Uhr & 15:28:15 Uhr & $55\,$s & $10.5 \frac{\si{\second}}{15\si{\meter}}$ & $79\,$m\\
 		\hline
 	\end{tabular}
+	\caption{GPS-Versuch: Messdaten}
 \end{table}
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.8\textwidth]{GPS.jpg}
-	\caption{muss ich mir noch überlegen}%XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+	\caption{Karte des DLR-Geländes mit den drei Satellitenpositionen und zugehörigen}
 	\label{fig:gps}
 \end{figure}
 
 \section{Foucaultsches Pendel}
-
+Zuerst bestimmt man mit einem Pendel die Erdbeschleunigung $g$:
+Für den Tangentialanteil der Gewichtskraft gilt nach Newton: $F_{G,\text{tan.}}=mg \ddot{\varphi}$.
+Für kleine Winkel ist er etwa linear zur Auslenkung: $F_{G,\text{tan.}}\approx mg\varphi$.
+Die sich daraus ergebende Differentialgleichung lässt sich z.B durch $\varphi(t)=A\cos(\omega t)$, mit der Amplitude $A$ und der Kreisfrequenz $\omega=\sqrt{\frac{g}{l}}$ lösen.
+Daraus lässt sich die Periodendauer
 \begin{align}
-	T = 2\pi \sqrt{\frac{l}{g}}
+	T =\frac{2\pi}{\omega}= 2\pi \sqrt{\frac{l}{g}}
 \end{align}
-
+bestimmen bzw. aus ihr die hier gesuchte Erdbeschleunigung (inklusive Fehlerformel aus der Gaußschen Fehlerfortpflanzung)
 \begin{align}
-	g = 4\pi^2 \frac{l}{T^2}
+	g &= 4\pi^2 \frac{l}{T^2}\,,\\ \label{eq:gbesch}
+	\sigma_g &= \frac{4\pi^2}{T^2} \sqrt{\sigma_l^2+\left(\frac{2l}{T}\right)^2 \cdot\sigma_T^2}
 \end{align}
-
-\begin{align}
-	\sigma_g = \frac{4\pi^2}{T^2} \sqrt{\sigma_l^2+\left(\frac{2l}{T}\right)^2 \cdot\sigma_T^2}
-\end{align}
-
+ausrechnen.
+Da diese nicht von der Pendelmasse abhängt, wird nur die Seillänge variiert.
+In Tabelle \ref{tab:gbesch} sind unsere Messwerte für die Periodendauer zu finden und in Abbildung \ref{tab:gbesch} sind diese dann mit \eqref{eq:gbesch} in Werte für die Erdbeschleunigung umgerechnet.
+Dabei werden Längenmessfehler von $\Delta s=1\,$cm und Zeitungenauigkeiten von $0.01\,$s angenommen, da zur Bestimmung der Periodendauer über 10 Perioden gemittelt wurde.
+Es ergibt sich ein gemittelter Wert von $(9.83\pm0.08)\,\si{\meter\per\second^2}$.
+Somit liegt der Literaturwert von $9.81\,\si{\meter\per\second^2}$ in diesem Intervall.
 \begin{table}[!htb]
 	\centering
 	\begin{tabular}{|c|c|}
@@ -181,13 +188,34 @@
 		$1.2$ & $2.165$\\
 		\hline
 	\end{tabular}
+	\caption{Messung der Erdbeschleunigung: Periodendauer des Pendels bei verschiedenen Seillängen.}
+	\label{tab:gbesch}
 \end{table}
 
 \begin{figure}[!htb]
 	\centering
 	\input{gbesch.tex}
+	\caption{Bestimmung der Erdbeschleunigung bei verschiedenen Seillängen und Mittelwert der Messungen.}
+	\label{fig:gbesch}
 \end{figure}
 
 \section{Erdumfang}
+\textsc{Eratosthenes} konnte schon 200 v.Chr. den Erdumfang bestimmen:
+Er stellte fest, dass die Sonne wenige Minuten am längsten Tag im Jahr in Syene, dem heutigen Assuan, keinen Schatten wirft, sie also genau über einem steht. Im nördlich gelegenen Alexandria jedoch beträgt der Schattenwurf $7^\circ12'$.
+Die Luftlinie zwischen den beiden Orten beträgt etwa $840\,$km, jedoch sind sie nicht auf dem gleichen Längengrad. Man muss etwa $20^\circ$ von Assuan nach Westen gehen, um nach Alexandria zu gelangen.
+So ist der Nord-Süd-Abstand der beiden Städte nur $\cos(20^\circ) \cdot 840\,$km$\,= 790\,$km.
+Aus dem Schattenwurf kann man ableiten, dass dies der 50ste Teil des Erdumfangs sein muss.
+Also beträgt der Erdumfang etwa $39500\,$km.
+Bei einer Messung am Globus im DLR-SchoolLab beträgt der Winkel zwischen den beiden Städten etwa $8^\circ$.
+So erhält man einen Erdumfang von etwa $\frac{360}{8} \cdot 840\,$km$\,=37800\,$km.
+Da man aber den Winkel nicht sehr genau messen konnte, ist dieser Wert mit einer großen Ungenauigkeit behaftet.
+
+
+Um nun die Strecke zwischen zwei Städten zu messen, schritten früher amtliche Schrittzähler diese mit einer Kette zwischen den Beinen ab.
+Damit wurde die Schrittlänge konstant gehalten.
+Wenn man nun um ein Hindernis laufen musste, lief man senkrecht zur eigentlichen Richtung, zählte diese Schritte nicht, lief ein Stück parallel  zur eigentlichen Richtung (Schritte werden gezählt), um dann wieder nicht zählend senkrecht zurück zulaufen.
+Um sicherzustellen, dass man rechtwinklig zur bisherigen Route läuft, nutzt man z.B. ein an den Enden verknotetes Seil mit 12 Knoten, die in äquidistanten Abständen vorkommen.
+Nun wird das Seil zu einem Dreieck mit den Kantenlängen $3,4\,$sowie$\,5$ gelegt, denn nach dem Satz von Pythagoras ist ein solches Dreieck rechtwinklig ($3^2+4^2=5^2$).
+So kann man auch die Entfernung der obigen Städte in Nord-Süd-Richtung messen.
 
 \end{document}
