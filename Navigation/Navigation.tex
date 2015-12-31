@@ -135,9 +135,19 @@
 \section{GPS Versuch}
 Das Satelliten-Navigationssystem \textsc{GPS} beruht darauf, dass man von drei bzw. wegen relativistischen Effekten vier bekannten Positionen durch Abstandsmessungen zu einer unbekannten Position diese bestimmen kann.
 Dabei wird der Abstand über die Laufzeit der Photonen bestimmt, denn diese bewegen sich mit konstanter Geschwindigkeit, der Lichtgeschwindigkeit.
-In diesem Versuch soll dies 
-
+In diesem Versuch soll dies mit Menschen nachgestellt werden:
+Auf dem DLR-Gelände soll eine Position vermessen werden, indem 3 Personen von 3 verschiedenen, aber bekannten Positionen direkt auf die zu vermessende Position zugehen.
 Aus der Differenz von Start- und Zielzeit wird die Wegstrecke der menschlichen Photonen bestimmt.
+Dazu wird noch Gehgeschwindigkeit benötigt, die man durch Ablaufen einer bekannten Länge (Maßband) erhält.
+In Tabelle \ref{tab:gps} sind unsere Messdaten zu finden.
+Die Wegstrecken $\Delta s$ werden nun als Radien zu den zugehörigen Startpositionen eingezeichnet (Abb.\ref{fig:gps}).
+Wo sich die drei Kreise treffen bzw. am Nächsten kommen, ist die zu ortende Position.
+Hier hat das relativ gut geklappt, denn die gesuchte Position befindet sich in der Mitte der T-Kreuzung.
+Man kann allerdings erkennen, dass die Radien etwas zu klein sind.
+Also sind die Personen etwas schneller gelaufen als bei der Geschwindigkeitsmessstrecke.
+Dies muss auch beim echten GPS beachtet werden, denn auch die Lichtgeschwindigkeit ist nicht gänzlich konstant, hängt sie doch vom Medium ab.
+So muss man ein Modell haben, durch welche Schichten mit zugehörigen Brechungsindex das Signal muss, um zum Empfänger zu gelangen.
+
 \begin{table}[!htb]
 	\centering
 	\begin{tabular}{|c|c|c|c|c|c|}
@@ -150,11 +160,12 @@ Aus der Differenz von Start- und Zielzeit wird die Wegstrecke der menschlichen P
 		\hline
 	\end{tabular}
 	\caption{GPS-Versuch: Messdaten}
+	\label{tab:gps}
 \end{table}
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.8\textwidth]{GPS.jpg}
+	\includegraphics[width=0.7\textwidth]{GPS.jpg}
 	\caption{Karte des DLR-Geländes mit den drei Satellitenpositionen und zugehörigen}
 	\label{fig:gps}
 \end{figure}
@@ -197,10 +208,13 @@ Somit liegt der Literaturwert von $9.81\,\si{\meter\per\second^2}$ in diesem Int
 \end{table}
 
 \begin{figure}[!htb]
-	\centering
-	\input{gbesch.tex}
-	\caption{Bestimmung der Erdbeschleunigung bei verschiedenen Seillängen und Mittelwert der Messungen.}
-	\label{fig:gbesch}
+	\centering	
+	\begin{minipage}{0.65\textwidth}	
+		\resizebox{\textwidth}{!}{   		
+   		\input{gbesch.tex}}
+   		\caption{Bestimmung der Erdbeschleunigung bei verschiedenen Seillängen und Mittelwert der Messungen.}
+   		\label{fig:gbesch}
+   \end{minipage}   
 \end{figure}
 
 Im zweiten Teil soll mit einem \textbf{Foucaultschen Pendel} die Erdrotation nachgewiesen werden.
@@ -226,7 +240,7 @@ Bei der ersten Messung war der Ausschlag jedoch so gering, dass dieser nicht ber
 Deshalb ist der ganze Versuch mit dem maximal möglichen Ausschlag (ohne irgendwo anzuecken) wiederholt worden:
 Diese Messung ergab eine Drehung von $26^\circ$ in etwa $100\,$min, also $T=\frac{360}{26}\cdot 100\,\si{min}\approx23\,$h.
 Dieser Wert ist also etwas besser, jedoch sollte der Wert für Göttingen bei $T(\phi\approx 51.5^\circ)\approx30\,\si{\hour} \;40\,\si{\minute}$ liegen.
-Es muss also noch weitere Messfehler geben.
+Es muss also noch weitere Fehler geben.
 
 \section{Erdumfang}
 Eratosthenes konnte schon 200 v.Chr. den Erdumfang bestimmen:
