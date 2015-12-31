@@ -203,10 +203,33 @@ Somit liegt der Literaturwert von $9.81\,\si{\meter\per\second^2}$ in diesem Int
 	\label{fig:gbesch}
 \end{figure}
 
-
+Im zweiten Teil soll mit einem \textbf{Foucaultschen Pendel} die Erdrotation nachgewiesen werden.
+Bei diesem Pendel handelt es sich um sehr langes und schweres Pendel, das lange pendeln kann.
+Aufgrund der Corioliskraft dreht sich die Pendelrichtung, eigentlich dreht sich jedoch der Boden unter dem Pendel.
+Dies kann man sich an den Polen gut vorstellen.
+Dort ist diese Rotationsperiode $T=24\,$h.
+Je näher man dem Äquator kommt, desto länger wird sie; da dort jedoch keine Corioliskraft wirkt, würde dort der Versuch nicht funktionieren.
+In der Vorlesung wurde hergeleitet, dass für die Rotationsperiode 
+\begin{align}
+	T=\frac{24\,\si{\hour}}{\sin\phi}
+	\label{eq:foucault}
+\end{align}
+gilt, wobei $\phi$ der Breitengrad ist.
+Man lenkt das Pendel also aus und wartet eine gewisse Zeit, nach der man schaut, wie weit sich die Pendelebene gedreht hat.
+Dies wird bei unserem Pendel durch Aufleuchten von LEDs in $1^\circ$-Schritten realisiert.
+Die Messung ergab eine Drehung von $9^\circ$ in etwa $24\,$min.
+Dies entspricht einer Rotationsperiode von $T=16\,$h, widerspricht somit \eqref{eq:foucault}.
+Es muss sich also um einen Fehler im Aufbau handeln, welcher zu einer verstärkten Rotation oder einer Pendel-Vorzugsrichtung führt.
+Dies geschieht etwa, wenn das Pendel etwas elliptisch schwingt.
+Um dies zu verhindern, ist ganz oben der sog. Charron-Ring angebracht, an den sich das Stahlsein anschmiegen soll.
+Bei der ersten Messung war der Ausschlag jedoch so gering, dass dieser nicht berührt wurde.
+Deshalb ist der ganze Versuch mit dem maximal möglichen Ausschlag (ohne irgendwo anzuecken) wiederholt worden:
+Diese Messung ergab eine Drehung von $26^\circ$ in etwa $100\,$min, also $T=\frac{360}{26}\cdot 100\,\si{min}\approx23\,$h.
+Dieser Wert ist also etwas besser, jedoch sollte der Wert für Göttingen bei $T(\phi\approx 51.5^\circ)\approx30\,\si{\hour} \;40\,\si{\minute}$ liegen.
+Es muss also noch weitere Messfehler geben.
 
 \section{Erdumfang}
-\textsc{Eratosthenes} konnte schon 200 v.Chr. den Erdumfang bestimmen:
+Eratosthenes konnte schon 200 v.Chr. den Erdumfang bestimmen:
 Er stellte fest, dass die Sonne wenige Minuten am längsten Tag im Jahr in Syene, dem heutigen Assuan, keinen Schatten wirft, sie also genau über einem steht. Im nördlich gelegenen Alexandria jedoch beträgt der Schattenwurf $7^\circ12'$.
 Die Luftlinie zwischen den beiden Orten beträgt etwa $840\,$km, jedoch sind sie nicht auf dem gleichen Längengrad. Man muss etwa $20^\circ$ von Assuan nach Westen gehen, um nach Alexandria zu gelangen.
 So ist der Nord-Süd-Abstand der beiden Städte nur $\cos(20^\circ) \cdot 840\,$km$\,= 790\,$km.
