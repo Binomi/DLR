@@ -147,7 +147,13 @@ Dies bedeutet,dass der Druck etwa um $10\,$hPa auf $8\,$Metern abnimmt.
 Das ist der in der Vorlesung angegebene Wert.
 
 \section{Tornadoexperiment}
-Rankine-Wirbel:
+Ein Tornado ist ein Luftwirbel mit fast senkrechter Drehachse, der durch Scherwinde entsteht.
+Dies wird in diesem Experiment nachgestellt, indem aus zwei diagonal angeordneten Düsen Luft in entgegengesetzte Richtung ausströmt.
+
+Es gibt verschiedene Modelle, die die Windgeschwindigkeit in Abhängigkeit vom Abstand zur Drehachse beschreiben.
+Ein Modell ist der \textbf{Rankine-Wirbel}.
+Man geht davon aus, dass in der Mitte ein fester Kern mit Radius $R$ ist, der sich mit konstanter Winkelgeschwindigkeit $\omega$ dreht.
+Für größere Abstände kann man den Wirbel als Potenzialwirbel beschreiben: Die Windgeschwindigkeit fällt mit $r^{-1}$ ab. 
 \begin{align}
 	v(r) = 
 	\begin{cases}
@@ -155,7 +161,8 @@ Rankine-Wirbel:
 		\omega \frac{R^2}{r} & \text{falls } r > R\\
 	\end{cases}
 \end{align}
-
+Diese Funktion ist zwar stetig, aber bei $r=R$ nicht differenzierbar.
+Um diese 
 Burgers-Rott-Modell
 \begin{align}
 	v(r) = \frac{\Gamma}{2\pi r}\left[1-\exp\left(a r^2\right)\right]
