@@ -132,15 +132,41 @@
 \author{Felix Kurtz}
 \maketitle
 
-\section{Wettervorhersage}
-
 \section{Lokales Wetter}
-Am Versuchstag, dem 07.12.15, herrschte in Göttingen mildes Wetter mit Temperaturen rund um $10\si{\celsius}$.
+Am Versuchstag, dem 07.12.15, herrschte in Göttingen mildes Wetter mit Temperaturen rund um die $10\si{\celsius}$.
 Die Wolken waren größtenteils \textit{Stratus}-Wolken, die den Himmel großflächig bedeckten.
 In einigen Wolkenlöchern konnte man \textit{Altocumulus}-Wolken entdecken.
 Außerdem war es fast windstill. 
 Dies lässt keine schnelle Wetteränderung erkennen, da die Wolken sich somit kaum bewegen.
 Die Wolkenschicht reißt höchstens ein bisschen auf oder es beginnt leicht zu regnen.
+
+\section{Wettervorhersage}
+Am 07.12. befand sich ein großes Hochdruckgebiet über Zentraleuropa, welches mit bis zu $1040\,$hPa ziemlich stark und somit stabil war (vgl, Abb.\ref{fig:wetter7}).
+Dies sorgte für das ungewöhnlich milde Wetter, denn so kam feuchte, warme Mittelmeerluft nach Deutschland.
+Die beobachtete Windstille kann man auch aus der Druckkarte ablesen, da die Isobaren über Deutschland weit auseinander liegen.
+Die Tiefdruckgebiete südlich von Island und über Russland werden sich vermutlich zu einem Gebiet vereinigen (vgl. Abb.\ref{fig:wetter12}).
+Dabei wird allerdings keine Kaltfront über Deutschland ziehen, da das Hoch sehr ausgeprägt ist.
+Anhand der anderen Karten in Abbildung \ref{fig:wettervorhersage} kann man erkennen, dass sich das Hoch über Mitteleuropa hält und das Wetter somit mild bleibt, da die Luft weiterhin aus dem Südwesten kommt.
+Wir prophezeiten, dass es kurz vor Weihnachten zu einem kleinen Wintereinbruch kommen könnte, da dann laut der Vorhersage die Isobaren in Nord-Süd-Richtung sind und so skandinavische Luft nach Deutschland kommen kann.
+Dies erfüllte sich nicht,jedoch war es auch eine sehr langfristige Prognose, sodass den Druckkarten dieses Zeitraums nicht so viel Bedeutung zugemessen werden sollte.
+
+
+ \begin{figure}[!htb]
+   \centering
+   \subfigure[7.12.\label{fig:wetter7}]
+   {\includegraphics[width=0.49\textwidth]{wetter0712.png}}
+   \hfill
+   \subfigure[12.12.\label{fig:wetter12}]
+   {\includegraphics[width=0.49\textwidth]{wetter1212.png}}
+   \hfill	
+	\subfigure[16.12.\label{fig:wetter16}]
+   {\includegraphics[width=0.49\textwidth]{wetter1612.png}}
+   \hfill
+   \subfigure[19.12.\label{fig:wetter19}]
+   {\includegraphics[width=0.49\textwidth]{wetter1912.png}}   
+   \caption{Bodendruckkarten/-vorhersagen vom 07.12.15 von \texttt{wetteronline.de}}
+   \label{fig:wettervorhersage}
+ \end{figure}
 
 \section{Relation Druck und Höhe}
 Mit einem Absolutdruck-Messgerät soll das Barometrische Höhengesetz verifiziert werden.
@@ -154,9 +180,12 @@ Das ist der in der Vorlesung angegebene Wert.
 Damit lassen sich allerdings nur Druckunterschiede für geringe Höhen(-unterschiede) beschreiben, da der Druck exponentiell abnimmt und dies nur die Linearisierung in Meereshöhe ist.
 \begin{figure}[!htb]
 	\centering
-	\input{hoehe.tex}
-	\caption{Höhenabhängigkeit des Drucks: Messwerte und lineare Approximation}
-	\label{fig:druckHoehe}
+	\begin{minipage}{0.7\textwidth}
+		\resizebox{\textwidth}{!}{   		
+   		\input{hoehe.tex}}
+		\caption{Höhenabhängigkeit des Drucks: Messwerte und lineare Approximation}
+		\label{fig:druckHoehe}
+	\end{minipage}
 \end{figure}
 
 \section{Tornadoexperiment}
@@ -211,14 +240,7 @@ Wie groß diese Geschwindigkeit ist, wurde allerdings nicht gemessen.
    \label{fig:tornado}
  \end{figure}
  
- In Bezug auf die Höhenunabhängigkeit ist die Geschwindigkeit bei $h=30\,$cm etwas höher.
- Vergleicht man nun aber die Parameter $\omega$, $R$ und $\Delta$ aus dem Fit der Modelle an die Messwerte (Tab. \ref{tab:tornado}), stellt man fest, dass jedes Modell zunächst für die beiden Höhen ähnliche Ergebnisse liefert, jedoch sind Ungenauigkeiten wegen 3 Parametern sehr groß.
-Sehr auffällig ist aber, dass die beiden Modelle für die gleichen Messwerte zu sehr unterschiedlichen Parameterwerten gelangen.
-So ist $\omega$ bei Burgers-Rott etwa doppelt so groß wie beim Rankine-Wirbel und somit die Verschiebung $\Delta$ und der Kernradius $R$ kleiner.
-Dies ist plausibler, da $r_\Delta=0\,$cm nicht so weit von der Mitte weg sein kann.
-Zwar passt das Rankine-Modell besser zu den $h=20\,$cm-Werten, das andere Modell kann jedoch beide Messkurven beschreiben -- mit jeweils einem Ausreißer.
- 
- \begin{table}[!htb]
+\begin{table}[!htb]
  	\centering
  	\begin{tabular}{|c||c|c||c|c|}
  	\hline
@@ -232,5 +254,13 @@ Zwar passt das Rankine-Modell besser zu den $h=20\,$cm-Werten, das andere Modell
  	\end{tabular}
  	\caption{Tornado: gefittete Parameter der beiden Modelle}
  	\label{tab:tornado}
- \end{table}
+ \end{table} 
+ 
+ In Bezug auf die Höhenunabhängigkeit ist die Geschwindigkeit bei $h=30\,$cm etwas höher.
+ Vergleicht man nun aber die Parameter $\omega$, $R$ und $\Delta$ aus dem Fit der Modelle an die Messwerte (Tab. \ref{tab:tornado}), stellt man fest, dass jedes Modell zunächst für die beiden Höhen ähnliche Ergebnisse liefert, jedoch sind Ungenauigkeiten wegen 3 Parametern sehr groß.
+Sehr auffällig ist aber, dass die beiden Modelle für die gleichen Messwerte zu sehr unterschiedlichen Parameterwerten gelangen.
+So ist $\omega$ bei Burgers-Rott etwa doppelt so groß wie beim Rankine-Wirbel und somit die Verschiebung $\Delta$ und der Kernradius $R$ kleiner.
+Dies ist plausibler, da $r_\Delta=0\,$cm nicht so weit von der Mitte weg sein kann.
+Zwar passt das Rankine-Modell besser zu den $h=20\,$cm-Werten, das andere Modell kann jedoch beide Messkurven beschreiben -- mit jeweils einem Ausreißer.
+ 
 \end{document}

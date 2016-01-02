@@ -42,6 +42,7 @@ set terminal epslatex color
 set output 'tornado2.tex'
 set xlabel '$r_\Delta$ [cm]'
 set ylabel '$v$ [$\frac{\text{m}}{\text{s}}$]'
+set key bottom right
 
 p 'tornado.dat' u 1:3:(0.1) w e t 'Messwerte',\
    f2(x) t'Rankine-Modell', g2(x) lt -1 t'Burgers-Rott-Modell'
