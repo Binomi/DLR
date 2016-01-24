@@ -3,10 +3,10 @@ set terminal epslatex color
 set output 'WasserSandSolar.tex'
 
 set xlabel "Zeit [s]"
-set ylabel "T [$\si\celsius$]"
+set ylabel "T [$\\si\\celsius$]"
 
 set samples 2000
-set key bottom left
+set key top left
 
 set fit logfile 'WasserSandSolar.fit'
 set fit errorvariables 
