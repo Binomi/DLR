@@ -133,10 +133,21 @@
 \maketitle
 
 \section{Aluminium}
+Die Aluminiumplatten haben eine Größe von $5.5\,\si{\centi\meter}\cdot 6.9\,\si{\centi\meter}=3.8\,\cdot 10^{-3}\si\meter^2$.
+Die dunkle Platte wiegt $50.6\,\si\gram$ und die helle $51.5\,\si\gram$
+Aluminium hat eine spezifische Wärmekapazität von $c=896\,\si{\joule\per\kelvin\per\kilo\gram}$.
+Mit dem gemessenen Anstieg der Temperatur
 \begin{align*}
-	\frac{\Delta T}{\Delta t}_\text{D} &= (0.536 \pm 0.021)\,\si{\kelvin\per\second}\,,\\
-	\frac{\Delta T}{\Delta t}_\text{H} &= (0.330 \pm 0.006)\,\si{\kelvin\per\second}
+	\left(\frac{\Delta T}{\Delta t}\right)_\text{D} &= (0.536 \pm 0.021)\,\si{\kelvin\per\second}\quad \text{sowie}\\
+	\left(\frac{\Delta T}{\Delta t}\right)_\text{H} &= (0.330 \pm 0.006)\,\si{\kelvin\per\second}
 \end{align*}
+ergibt sich eine Leistung pro Fläche
+\begin{align*}
+	\frac{P}{A}=\frac{c\cdot m\cdot\Delta T}{\Delta t}
+\end{align*}
+für die dunkle Platte von $(6400 \pm 250)\,\si{\watt\per\meter^2}$ sowie für die helle von $(4010 \pm 80)\,\si{\watt\per\meter^2}$.
+Geht man davon aus, dass die dunkle Platte $90\%$ der eingestrahlten Leistung absorbiert, beträgt die Strahlungsleistung pro Fläche $(7110 \pm 280)\,\si{\watt\per\meter^2}$.
+Dies bedeutet auch, dass die helle Platte nur etwa $56\%$ absorbiert.
 \begin{figure}[!htb]
 	\centering
 	\begin{minipage}{0.75\textwidth}	
@@ -148,8 +159,14 @@
 \end{figure}
 
 \section{Wasser vs. Sand}
-%a1              = 0.0565758        +/- 0.002334     (4.126%)
-%a2              = 0.180394         +/- 0.005918     (3.281%)
+
+Von beiden Stoffen ist die gleiche Menge (Masse) mit der der gleichen Leistung beschienen worden, sodass die Temperaturerhöhung pro Zeit
+\begin{align*}
+	\left(\frac{\Delta T}{\Delta t}\right)_\text{Wasser} &= (0.0566 \pm 0.0024)\,\si{\kelvin\per\second}\quad\text{und}\\
+	\left(\frac{\Delta T}{\Delta t}\right)_\text{Sand} &= (0.180 \pm 0.006)\,\si{\kelvin\per\second}
+\end{align*}
+invers zur spezifischen Wärmekapazität ist: $c_\text{Wasser}=3.18\cdot c_\text{Sand}$.
+Wasser hat eine spezifische Wärmekapazität\footnote{\url{https://de.wikipedia.org/w/index.php?title=Spezifische\_W\%C3\%A4rmekapazit\%C3\%A4t&oldid=150986265}} von $4.182\,\si{\kilo\joule\per\kilo\gram\per\meter}$ und somit Sand eine von $1.32\,\si{\kilo\joule\per\kilo\gram\per\meter}$
 
 \begin{figure}[!htb]
 	\centering
