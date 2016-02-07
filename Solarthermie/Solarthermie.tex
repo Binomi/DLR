@@ -121,10 +121,7 @@
 %Dateien aus Unterverzeichnissen
 \usepackage{import}
 
-%Bibliography \bibliography{literatur} und \cite{gerthsen}
-%\usepackage{cite}
-\usepackage{babelbib}
-\selectbiblanguage{ngerman}
+\usepackage{url}
 
 \begin{document}
 
@@ -132,11 +129,27 @@
 \author{Felix Kurtz}
 \maketitle
 
+\section{Einleitung}
+Bei der Abkehr von fossilen Energieträgern spielt die Sonne als Energiequelle eine zentrale Rolle.
+So müssen auch neue Kraftwerke konzipiert werden.
+Größtenteils wird dabei auf das bekannte Konzept der Erzeugung von Wasserdampf durch Erhitzen, welcher dann einen Stromgenerator antreibt.
+Die Aufgabenstellung ist jedoch, die von der Sonne am Tag gelieferte Energie zu speichern, um auch in der Nacht eine Energieversorgung aufrecht erhalten zu können (vgl. Protokoll \textit{Chemie}).
+Hier steht das \textbf{Solarwärmekraftwerk} im Mittelpunkt.
+Dabei wird die Sonnenstrahlung mit vielen Spiegeln auf einen Punkt fokussiert.
+Dort erhitzt man ein Gas, elches dann wiederum zu einen Wasser zu Wasserdampf erhitzt, aber auch seine Wärme an einen Wärmespeicher abgibt.
+Die Spiegel müssen dabei dem Lauf der Sonne folgen, damit der Fokus am gleichen Ort bleibt.
+
+Im DLR SchoolLab ist ein Modell dieses Kraftwerktyps aufgebaut.
+Dies soll für die folgenden Messungen benutzt werden.
+
 \section{Aluminium}
-Die Aluminiumplatten haben eine Größe von $5.5\,\si{\centi\meter}\cdot 6.9\,\si{\centi\meter}=3.8\,\cdot 10^{-3}\si\meter^2$.
+Zuerst werden zwei Alu-Platten in den Fokus des Mini-Kraftwerks gehalten und der zeitliche Verlauf der Temperatur notiert.
+Die Platten unterscheiden sich eigentlich nur in der Oberflächenbeschaffenheit:
+Während die eine metallisch glänzt, ist die andere dunkel beschichtet.
+Sie haben eine Größe von $5.5\,\si{\centi\meter}\cdot 6.9\,\si{\centi\meter}=3.8\,\cdot 10^{-3}\si\meter^2$.
 Die dunkle Platte wiegt $50.6\,\si\gram$ und die helle $51.5\,\si\gram$
 Aluminium hat eine spezifische Wärmekapazität von $c=896\,\si{\joule\per\kelvin\per\kilo\gram}$.
-Mit dem gemessenen Anstieg der Temperatur
+Mit dem gemessenen Anstieg der Temperatur aus Abb. \ref{fig:aluSolar}
 \begin{align*}
 	\left(\frac{\Delta T}{\Delta t}\right)_\text{D} &= (0.536 \pm 0.021)\,\si{\kelvin\per\second}\quad \text{sowie}\\
 	\left(\frac{\Delta T}{\Delta t}\right)_\text{H} &= (0.330 \pm 0.006)\,\si{\kelvin\per\second}
@@ -148,6 +161,13 @@ ergibt sich eine Leistung pro Fläche
 für die dunkle Platte von $(6400 \pm 250)\,\si{\watt\per\meter^2}$ sowie für die helle von $(4010 \pm 80)\,\si{\watt\per\meter^2}$.
 Geht man davon aus, dass die dunkle Platte $90\%$ der eingestrahlten Leistung absorbiert, beträgt die Strahlungsleistung pro Fläche $(7110 \pm 280)\,\si{\watt\per\meter^2}$.
 Dies bedeutet auch, dass die helle Platte nur etwa $56\%$ absorbiert.
+
+Außerdem misst man die Leistung pro Fläche, die bei einem Spiegel ankommt.
+Diese liegt bei $990\,\si{\watt\per\meter^2}$.
+So wird im Fokus das Licht von etwa 7 Spiegeln gesammelt.
+Dies scheint sehr wenig, denn das Spiegelarray besteht etwa aus 100 Spiegeln.
+Falls die Messung nicht fehlerhaft war, kann dies daran liegen, dass die Spiegel nicht so gut justiert waren und so der Fokus sehr viel größer als die Fläche, die die beiden Aluminiumplatten einnehmen.
+Außerdem wirft die Befestigung Schatten auf die Spiegel.
 \begin{figure}[!htb]
 	\centering
 	\begin{minipage}{0.75\textwidth}	
@@ -159,14 +179,15 @@ Dies bedeutet auch, dass die helle Platte nur etwa $56\%$ absorbiert.
 \end{figure}
 
 \section{Wasser vs. Sand}
-
-Von beiden Stoffen ist die gleiche Menge (Masse) mit der der gleichen Leistung beschienen worden, sodass die Temperaturerhöhung pro Zeit
+Nun vergleichen wir die Wärmekapazitäten von Wasser und Sand.
+Von beiden Stoffen ist die gleiche Menge (Masse) mit der der gleichen Leistung beschienen worden, sodass die Temperaturerhöhung pro Zeit aus Abb. \ref{fig:wasserSandSolar}
 \begin{align*}
 	\left(\frac{\Delta T}{\Delta t}\right)_\text{Wasser} &= (0.0566 \pm 0.0024)\,\si{\kelvin\per\second}\quad\text{und}\\
 	\left(\frac{\Delta T}{\Delta t}\right)_\text{Sand} &= (0.180 \pm 0.006)\,\si{\kelvin\per\second}
 \end{align*}
 invers zur spezifischen Wärmekapazität ist: $c_\text{Wasser}=3.18\cdot c_\text{Sand}$.
-Wasser hat eine spezifische Wärmekapazität\footnote{\url{https://de.wikipedia.org/w/index.php?title=Spezifische\_W\%C3\%A4rmekapazit\%C3\%A4t&oldid=150986265}} von $4.182\,\si{\kilo\joule\per\kilo\gram\per\meter}$ und somit Sand eine von $1.32\,\si{\kilo\joule\per\kilo\gram\per\meter}$
+Wasser hat eine spezifische Wärmekapazität\footnote{\url{https://de.wikipedia.org/w/index.php?title=Spezifische\_W\%C3\%A4rmekapazit\%C3\%A4t&oldid=150986265}} von $4.182\,\si{\kilo\joule\per\kilo\gram\per\meter}$ und somit Sand eine von $1.32\,\si{\kilo\joule\per\kilo\gram\per\meter}$.
+Dies bedeutet, dass Sand sich nicht so gut als Wärmespeicher eignet, da er sich schnell erwärmt und sich somit ein hoher Temperaturunterschied zur Umgebung aufbaut, den man durch sehr gute Isolation aufrecht erhalten muss.
 
 \begin{figure}[!htb]
 	\centering
